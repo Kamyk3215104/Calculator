@@ -5,6 +5,8 @@
 - [@Kamyk3215104](https://github.com/Kamyk3215104)
 - Copyright 2023 Kacper.K All right reserved.
 
+## ATTENTION!
+- Program works only on the version 3.9.12 of the compiler. Newest is not supported.
 
 ## Installation
 
