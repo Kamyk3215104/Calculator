@@ -1,10 +1,9 @@
 # Calcuclator
 
-## Copyright 2023 Kacper.K All right reserved.
-
 ## Authors
 
 - [@Kamyk3215104](https://github.com/Kamyk3215104)
+- Copyright 2023 Kacper.K All right reserved.
 
 
 ## Installation
