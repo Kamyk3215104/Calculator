@@ -330,7 +330,7 @@ wyswitlacz=Label(okno, text=aktualna, font=('Arial', 20), anchor="w")
 wyswitlacz.place(x=10, y=10, width = 262, height = 99)
 wyswitlacz_znaku=Label(okno, text="", font=('Arial', 12), anchor="e")
 wyswitlacz_znaku.place(x=10, y=10, width = 262, height = 15)
-Button2nd = Button(okno, text = '2nd', font=('', font_size - 2), bg='gray', fg='black', command=lambda: [second_play(), second_mode()])
+Button2nd = Button(okno, text = 'second', font=('', font_size - 2), bg='gray', fg='black', command=lambda: [second_play(), second_mode()])
 Button2nd.place(x=10, y=100, width=262, height=22)
 
 #l = Label(okno, text = "Calculate integers")
