@@ -1,6 +1,5 @@
 from tkinter import *
-from playsound import playsound
-from pathlib import Path
+import miniaudio
 
 #Properties________________
 okno = Tk()
@@ -14,6 +13,7 @@ okno.maxsize(282, 440)
 aktualna = int(0)
 wpisana = int(0)
 znak = ""
+stream = ""
 znak_wykonaj = int(0)
 n = int(0)
 poprzedni = int(0)
@@ -25,19 +25,32 @@ second = False
 
 #Functions________________
 def play():
-    playsound(Path().cwd() / "Click.wav")
+    global stream
+    stream = miniaudio.stream_file("Click.wav")
+    play_sound()
 
 def equal_play():
-    playsound(Path().cwd() / "Equal_click.wav")
+    global stream
+    stream = miniaudio.stream_file("Equal_click.wav")
+    play_sound()
 
 def second_play():
-    playsound(Path().cwd() / "Nose_Click.mp3")
+    global stream
+    stream = miniaudio.stream_file("Nose_Click.mp3")
+    play_sound()
 
 def Boom_Play():
-    playsound(Path().cwd() / "Explosion.wav")
+    global stream
+    stream = miniaudio.stream_file("Explosion.wav")
+    play_sound()
 
 def action_play():
-    playsound(Path().cwd() / "PickupCoin.wav")
+    global stream
+    stream = miniaudio.stream_file("Action.wav")
+    play_sound()
+
+def play_sound():
+    miniaudio.PlaybackDevice().start(stream)
 
 #Znaki_____________________
 def opposed():
