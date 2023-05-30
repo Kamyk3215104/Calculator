@@ -14,8 +14,7 @@ In terminal write this to install this plugins
 
 ```bash
   pip install tkinter
-  pip install playsound
-  pip instal pathlib
+  pip install miniaudio
 ```
 
 ## Preview
